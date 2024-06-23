@@ -1,0 +1,33 @@
+{
+  "name": "puppeteer-with-jenkins",
+  "version": "1.0.0",
+  "description": "npm init",
+  "main": "index.js",
+  "scripts": {
+    "e2e-test": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests/e2e.test.js",
+    "smoke-test": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests/smoke.test.js",
+    "start-jenkins-server": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TharushikaR/Puppeteer-with-Jenkins.git"
+  },
+  "keywords": [
+    "Puppeteer",
+    "Jenkin",
+    "CI",
+    "CD"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TharushikaR/Puppeteer-with-Jenkins/issues"
+  },
+  "homepage": "https://github.com/TharushikaR/Puppeteer-with-Jenkins#readme",
+  "dependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.4.0",
+    "prettier": "^3.3.2",
+    "puppeteer": "^22.12.0"
+  }
+}
